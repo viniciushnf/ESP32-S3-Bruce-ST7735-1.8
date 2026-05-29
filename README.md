@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.png" alt="ESP32-S3 Bruce Firmware Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/images/banner-github.png" alt="ESP32-S3 Bruce Firmware Banner" width="100%">
 </p>
 
 # ESP32-S3 + Bruce Firmware | 1.8" ST7735 Display, GPS, NFC, NRF24L01, IR & Joystick
