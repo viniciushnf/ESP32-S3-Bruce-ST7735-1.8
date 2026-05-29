@@ -1,0 +1,97 @@
+## Installing and Uploading the Modified Firmware
+
+### Requirements
+
+Before building and uploading the firmware, install the following software:
+
+* Visual Studio Code (VS Code)
+* PlatformIO IDE extension for VS Code
+* Python 3.x
+* Git (optional, but recommended)
+
+### 1. Download the Repository
+
+Clone the repository:
+
+```bash
+git clone https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8.git
+```
+
+Or download the repository as a ZIP file and extract it.
+
+### 2. Open the Firmware Project
+
+1. Open Visual Studio Code.
+2. Install the PlatformIO IDE extension if it is not already installed.
+3. Click **File → Open Folder**.
+4. Open the folder:
+
+```text
+bruce-firmware
+```
+
+5. Wait for PlatformIO to initialize the project and install the required dependencies.
+
+### 3. Verify Python Installation
+
+PlatformIO requires Python to build the firmware.
+
+To verify that Python is installed, open a terminal and run:
+
+```bash
+python --version
+```
+
+or
+
+```bash
+python3 --version
+```
+
+If Python is not installed, download it from:
+
+https://www.python.org/downloads/
+
+### 4. Connect the ESP32-S3
+
+1. Connect the ESP32-S3 board to your computer using a USB data cable.
+2. Wait for the USB serial driver to be detected.
+3. Verify that the board appears as a serial device.
+
+### 5. Build the Firmware
+
+Inside VS Code:
+
+1. Open the PlatformIO sidebar.
+2. Select the appropriate ESP32-S3 environment if multiple environments are available.
+3. Click **Build** (✓ icon).
+
+PlatformIO will compile the firmware and download any missing dependencies automatically.
+
+### 6. Upload the Firmware
+
+After a successful build:
+
+1. Click **Upload** (→ icon) in PlatformIO.
+2. Wait for the upload process to complete.
+3. If required, place the ESP32-S3 into bootloader mode according to your board's instructions.
+
+### 7. First Boot
+
+After uploading:
+
+1. Reboot the ESP32-S3.
+2. Verify that the display initializes correctly.
+3. Confirm that the joystick, SD card, GPS, NFC, NRF24L01, infrared module, and battery monitoring functions operate as expected.
+
+### Troubleshooting
+
+* Verify all module connections and wiring.
+* Confirm that the correct ESP32-S3 environment is selected.
+* Ensure that Python and PlatformIO are properly installed.
+* Use a USB cable capable of data transfer (not power-only).
+* Check that all required libraries and dependencies were installed successfully.
+
+### Notes
+
+This firmware contains custom modifications made specifically for the hardware configuration documented in this repository, including support for the 1.8" ST7735 display, joystick navigation enhancements, interface optimizations, and additional features.
