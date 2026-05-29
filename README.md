@@ -12,7 +12,7 @@ This project combines multiple modules into a single portable Bruce Firmware dev
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=Ke6ndQEae68">
-    <img src="images/youtube-thumbnail.jpg" alt="YouTube Video" width="800">
+    <img src="[images/youtube-thumbnail.jpg](https://img.youtube.com/vi/Ke6ndQEae68/maxresdefault.jpg)" alt="YouTube Video" width="800">
   </a>
 </p>
 
