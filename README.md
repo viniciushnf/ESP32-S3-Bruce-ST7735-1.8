@@ -54,29 +54,13 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ## Wiring Diagram and Documentation
 
-The module pinout can be found in:
+The module pinout can be found in: wiring-diagram/pinout.txt
 
-```text
-wiring-diagram/pinout.txt
-```
+The wiring diagram can be found in: wiring-diagram/wiring-diagram.png
 
-The wiring diagram can be found in:
+Hardware assembly photos can be found in: images/
 
-```text
-wiring-diagram/wiring-diagram.png
-```
-
-Hardware assembly photos can be found in:
-
-```text
-images/
-```
-
-The installation guide can be found in:
-
-```text
-installation-guide.txt
-```
+The installation guide can be found in: installation-guide.txt
 
 ---
 
@@ -84,11 +68,7 @@ installation-guide.txt
 
 * Several Bruce Firmware files were modified to adapt the interface to the 1.8" ST7735 display.
 * Additional features and improvements were added to the firmware.
-* The installation guide explaining how to upload the modified firmware can be found in:
-
-```text
-installation-guide.txt
-```
+* The installation guide explaining how to upload the modified firmware can be found in: installation-guide.txt
 
 ---
 
