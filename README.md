@@ -11,8 +11,8 @@ This project combines multiple modules into a single portable Bruce Firmware dev
 ## YouTube Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=Ke6ndQEae68">
-    <img src="https://img.youtube.com/vi/Ke6ndQEae68/maxresdefault.jpg" alt="YouTube Video" width="800">
+  <a href="https://www.youtube.com/watch?v=Ke6ndQEae68" align="center">
+    <img src="https://img.youtube.com/vi/Ke6ndQEae68/maxresdefault.jpg" alt="YouTube Video" width="50%" style="width:50%;"align="center">
   </a>
 </p>
 
@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 * Infrared Transmitter and Receiver
 * Joystick
 * 18650 Li-ion Battery
-* TP4056 + MT3608 Battery Charging and 5V Regulation Module
+* J5019 (TP4056 + MT3608) Battery Charging and 5V Regulation Module
 
 ---
 
@@ -54,13 +54,10 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ## Wiring Diagram and Documentation
 
-The module pinout can be found in: wiring-diagram/pinout.txt
-
-The wiring diagram can be found in: wiring-diagram/wiring-diagram.png
-
-Hardware assembly photos can be found in: images/
-
-The installation guide can be found in: installation-guide.txt
+* The module pinout can be found in: wiring-diagram/pinout.txt
+* The wiring diagram can be found in: wiring-diagram/wiring-diagram.png
+* Hardware assembly photos can be found in: images/
+* The installation guide can be found in: installation-guide.txt
 
 ---
 
