@@ -1,0 +1,51 @@
+---- DISPLAY ----
+LED BL -----> 4
+SCK (SCLK) -> 5
+SDA (MOSI) -> 6
+AO (DC) ----> 7
+RESET ------> 15
+CS ---------> 16
+
+---- SD CARD ----
+CS ---> 40
+MOSI -> 6
+MISO -> 41
+SCK --> 5
+
+--- NRF24L01 -----
+CE -----> 21
+CSN/SS -> 47
+SCK ----> 5
+MOSI ---> 6
+MISO ---> 41
+IRQ ----> 35
+
+---- JOYSTICK ----
+VR-X -> 12
+VR-Y -> 13
+SW ---> 14
+
+------ I2C ------
+SDA -> 18
+SCL -> 8
+
+------- IR -------
+TX -> 1
+RX -> 2
+
+------ GPS ------
+GPS TX -> 38 (RX)
+GPS RX -> 17 (TX)
+
+---- BATTERY ----
+BAT -> 10
+
+- - - - - - - - -
+
+Attention:
+
+I recommend testing all components on a breadboard before assembling the final device. Be sure to verify the pinout,
+operating voltage, and specifications of each module, as different versions may have different requirements.
+
+Carefully check the power connections and ensure that all modules are compatible with your chosen power supply.
+Testing everything beforehand can help identify wiring issues, compatibility problems, and configuration mistakes before the final assembly.
