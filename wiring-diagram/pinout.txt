@@ -1,3 +1,5 @@
+Module pin ---> ESP32-S3 GPIO
+
 ---- DISPLAY ----
 LED BL -----> 4
 SCK (SCLK) -> 5
