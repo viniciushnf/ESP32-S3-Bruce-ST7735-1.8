@@ -117,3 +117,13 @@ For additional information about Bruce Firmware, visit:
 
 https://bruce.computer/
 https://github.com/BruceDevices/firmware
+
+------------------------------------------------
+
+Disclaimer:
+
+* This project is intended for educational, research, and development purposes only.
+* The author assumes no responsibility for any damage to hardware, software, property, legal issues, or data resulting from the use or misuse of the information, files, or materials provided in this repository.
+* Users are responsible for ensuring compliance with all applicable laws, regulations, and policies in their jurisdiction. This project should only be used in authorized environments and in a responsible and ethical manner.
+* No warranty is provided regarding the accuracy, completeness, reliability, or suitability of the hardware designs, firmware modifications, wiring diagrams, or documentation contained in this repository.
+* By using this project, you acknowledge that you do so at your own risk.
