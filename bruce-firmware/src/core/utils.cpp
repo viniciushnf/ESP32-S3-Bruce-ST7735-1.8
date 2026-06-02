@@ -156,6 +156,11 @@ void showDeviceInfo() {
     area.addLine("SD Card free: " + formatBytes(SD.totalBytes() - SD.usedBytes()));
     area.addLine("");
 
+    area.addLine("Flash size: " + String(ESP.getFlashChipSize() / 1024 / 1024) + " MB");
+    area.addLine("Flash chip size: " + String(ESP.getFlashChipSize()));
+    area.addLine("Flash chip mode: " + String(ESP.getFlashChipMode()));
+    area.addLine("");
+
 #ifdef HAS_SCREEN
     area.addLine("[SCREEN]");
     area.addLine("Rotation: " + String(ROTATION));
