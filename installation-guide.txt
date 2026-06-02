@@ -1,97 +1,119 @@
-## Installing and Uploading the Modified Firmware
+ESP32-S3 Bruce Firmware Installation Guide
 
-### Requirements
+This guide explains how to install and upload the modified Bruce Firmware included in this repository to an ESP32-S3 board.
 
-Before building and uploading the firmware, install the following software:
+Repository: https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8
 
-* Visual Studio Code (VS Code)
-* PlatformIO IDE extension for VS Code
+------------------------------------------------
+
+BUILD AND UPLOAD THE SOURCE CODE (RECOMMENDED FOR CUSTOMIZATION AND DEVELOPMENT)
+
+Requirements:
+
+* ESP32-S3 board
+* USB data cable
+* Visual Studio Code
+* PlatformIO extension for VS Code
 * Python 3.x
-* Git (optional, but recommended)
 
-### 1. Download the Repository
+Step 1 - Download the Repository
 
-Clone the repository:
+* Download or clone this repository: https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8
 
-```bash
-git clone https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8.git
-```
+* The modified Bruce Firmware source code is located in: bruce-firmware/
 
-Or download the repository as a ZIP file and extract it.
+Step 2 - Install Python
 
-### 2. Open the Firmware Project
+Download and install Python: https://www.python.org/downloads/
+
+Important:
+
+During installation, enable the option: "Add Python to PATH"
+
+Verify the installation:
+
+Open a terminal and run:
+python --version
+or
+python3 --version
+
+Step 3 - Install Visual Studio Code
+
+Download and install Visual Studio Code: https://code.visualstudio.com/
+
+Step 4 - Install PlatformIO
 
 1. Open Visual Studio Code.
-2. Install the PlatformIO IDE extension if it is not already installed.
-3. Click **File → Open Folder**.
-4. Open the folder:
+2. Open the Extensions tab.
+3. Search for:
 
-```text
-bruce-firmware
-```
+PlatformIO IDE
 
-5. Wait for PlatformIO to initialize the project and install the required dependencies.
+4. Install the extension.
+5. Restart Visual Studio Code if required.
 
-### 3. Verify Python Installation
+Step 5 - Open the Firmware Project
 
-PlatformIO requires Python to build the firmware.
+1. Open Visual Studio Code.
 
-To verify that Python is installed, open a terminal and run:
+2. Select: File -> Open Folder
 
-```bash
-python --version
-```
+3. Open the folder: bruce-firmware
 
-or
+4. Wait for PlatformIO to initialize the project.
 
-```bash
-python3 --version
-```
+The first initialization may take several minutes because PlatformIO will automatically download the required toolchains and libraries.
 
-If Python is not installed, download it from:
+Step 6 - Connect the ESP32-S3
 
-https://www.python.org/downloads/
+Connect the ESP32-S3 board to the computer using a USB data cable.
 
-### 4. Connect the ESP32-S3
+Wait for the operating system to recognize the device.
 
-1. Connect the ESP32-S3 board to your computer using a USB data cable.
-2. Wait for the USB serial driver to be detected.
-3. Verify that the board appears as a serial device.
+Step 7 - Verify the Selected Environment
 
-### 5. Build the Firmware
+Open the file: platformio.ini
 
-Inside VS Code:
+Verify that the correct ESP32-S3 environment is selected for your hardware.
 
-1. Open the PlatformIO sidebar.
-2. Select the appropriate ESP32-S3 environment if multiple environments are available.
-3. Click **Build** (✓ icon).
+The repository already contains the configuration used for this project.
 
-PlatformIO will compile the firmware and download any missing dependencies automatically.
+Step 8 - Compile the Firmware
 
-### 6. Upload the Firmware
+Click the Build button in PlatformIO or run: pio run
 
-After a successful build:
+The compilation process may take several minutes during the first build.
 
-1. Click **Upload** (→ icon) in PlatformIO.
-2. Wait for the upload process to complete.
-3. If required, place the ESP32-S3 into bootloader mode according to your board's instructions.
+Step 9 - Upload the Firmware
 
-### 7. First Boot
+Click the Upload button in PlatformIO or run: pio run --target upload
 
-After uploading:
+Wait until the upload process finishes successfully.
 
-1. Reboot the ESP32-S3.
-2. Verify that the display initializes correctly.
-3. Confirm that the joystick, SD card, GPS, NFC, NRF24L01, infrared module, and battery monitoring functions operate as expected.
+Step 10 - Monitor the Serial Port (Optional)
 
-### Troubleshooting
+To open the serial monitor:
+pio device monitor
+or use the PlatformIO Serial Monitor button.
 
-* Verify all module connections and wiring.
-* Confirm that the correct ESP32-S3 environment is selected.
-* Ensure that Python and PlatformIO are properly installed.
-* Use a USB cable capable of data transfer (not power-only).
-* Check that all required libraries and dependencies were installed successfully.
+------------------------------------------------
 
-### Notes
+### IMPORTANT NOTES ###
 
-This firmware contains custom modifications made specifically for the hardware configuration documented in this repository, including support for the 1.8" ST7735 display, joystick navigation enhancements, interface optimizations, and additional features.
+* Verify all wiring before powering the device.
+* Make sure the display, GPS, NFC, NRF24L01, infrared modules, joystick, and other peripherals are connected according to the wiring diagram provided in this repository.
+* Different module versions may use different pinouts or operating voltages.
+* Always check the specifications of your hardware before connecting power.
+* If the board is not detected, verify the USB cable and install the appropriate USB-to-Serial drivers if required.
+* Some ESP32-S3 boards may require entering bootloader mode manually during flashing.
+
+Additional Documentation:
+
+* Wiring diagram: wiring-diagram/
+* Pinout information: wiring-diagram/pinout.txt
+* Hardware photos: images/
+
+For additional information about Bruce Firmware, visit:
+
+https://bruce.computer/
+https://github.com/BruceDevices/firmware
