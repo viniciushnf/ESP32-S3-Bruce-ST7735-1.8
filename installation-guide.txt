@@ -2,11 +2,13 @@ ESP32-S3 Bruce Firmware Installation Guide
 
 This guide explains how to install and upload the modified Bruce Firmware included in this repository to an ESP32-S3 board.
 
-Repository: https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8
+Repository:
+https://github.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8
 
 ------------------------------------------------
 
-BUILD AND UPLOAD THE SOURCE CODE (RECOMMENDED FOR CUSTOMIZATION AND DEVELOPMENT)
+OPTION 1 - BUILD AND UPLOAD THE SOURCE CODE
+(RECOMMENDED FOR CUSTOMIZATION AND DEVELOPMENT)
 
 Requirements:
 
@@ -96,6 +98,131 @@ To open the serial monitor:
 pio device monitor
 or use the PlatformIO Serial Monitor button.
 
+------------------------------------------------
+
+OPTION 2 - FLASH THE PRECOMPILED BIN FILE
+(FASTEST METHOD)
+
+This is the easiest way to install Bruce Firmware on the ESP32-S3 without compiling the source code.
+
+The precompiled firmware file is located in: bruce-firmware/Bruce-esp32-s3-st7735.bin
+
+Requirements:
+* ESP32-S3 board
+* USB cable
+* Google Chrome browser (recommended)
+* Internet connection
+
+I strongly recommend using Google Chrome to access the ESPTool Web Flasher. Other browsers may also work, but Chrome currently provides the best compatibility and Web Serial support.
+
+ESPTool Web Flasher: https://espressif.github.io/esptool-js/
+
+Tested Hardware:
+This procedure was tested on an ESP32-S3-WROOM-1-N16R8 and worked perfectly.
+
+The N16R8 version has:
+* 16 MB Flash
+* 8 MB PSRAM
+
+Installation Steps:
+
+1. Connect the ESP32-S3 to your computer using a USB cable.
+
+2. Open Google Chrome.
+
+3. Open the ESPTool Web Flasher: https://espressif.github.io/esptool-js/
+
+4. Click "Connect".
+
+5. Select the correct COM port for your ESP32-S3.
+
+6. Click "Erase Flash".
+(This step is highly recommended because it removes old firmware, partition tables, and flash configurations that could prevent the firmware from booting correctly.)
+
+7. After the erase process finishes, select the firmware file: Bruce-esp32-s3-st7735.bin
+* located in: bruce-firmware/Bruce-esp32-s3-st7735.bin
+
+8. Configure the flashing parameters exactly as follows:
+* Address: 0x0
+* Flash Mode: DIO
+* Flash Frequency: 40M
+* Flash Size: 16 MB
+
+9. Click "Program".
+
+10. Wait for the flashing process to complete.
+
+11. After the upload finishes, the ESP32-S3 may not automatically reboot. If that happens, simply disconnect and reconnect power, or press the RESET button.
+
+12. The Bruce Firmware should now start normally.
+
+Notes for ESP32-S3 N16R8 Users
+
+If your board is an ESP32-S3-WROOM-1-N16R8, use:
+* Address: 0x0
+* Flash Mode: DIO
+* Flash Frequency: 40M
+* Flash Size: 16 MB
+
+These settings were tested and verified to work correctly.
+
+What If My ESP32-S3 Is Not an N16R8?
+
+The most important parameter is the Flash Size.
+
+Different ESP32-S3 modules may have different flash capacities:
+
+N4  = 4 MB Flash
+N8  = 8 MB Flash
+N16 = 16 MB Flash
+N32 = 32 MB Flash
+
+If your board is not an N16R8, select the Flash Size that matches your hardware.
+
+Examples:
+
+ESP32-S3 N8:
+Flash Size = 8 MB
+
+ESP32-S3 N16:
+Flash Size = 16 MB
+
+ESP32-S3 N32:
+Flash Size = 32 MB
+
+You can usually find the flash size:
+
+* Printed on the module
+* In the product specifications
+* In the board documentation
+
+If you are unsure about your board specifications, check the manufacturer's documentation before flashing.
+
+
+
+Troubleshooting
+
+Firmware uploads successfully but does not boot:
+* Perform "Erase Flash" again.
+* Reflash the firmware.
+* Verify that Flash Size matches your hardware.
+* Verify that Address is set to 0x0.
+* Verify that Flash Mode is set to DIO.
+* Verify that Flash Frequency is set to 40M.
+
+ESP32-S3 does not reboot automatically:
+* Press the RESET button.
+* Or disconnect and reconnect power.
+
+
+
+The firmware was successfully tested using:
+* ESP32-S3-WROOM-1-N16R8
+* Flash Size: 16 MB
+* Flash Mode: DIO
+* Flash Frequency: 40M
+* Address: 0x0
+* ESPTool Web Flasher (Chrome)
 ------------------------------------------------
 
 ### IMPORTANT NOTES ###
