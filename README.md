@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## :microchip: Hardware Used
+## :rocket: Hardware Used
 
 * ESP32-S3
 * 1.8" ST7735 TFT Display with SD Card Reader
