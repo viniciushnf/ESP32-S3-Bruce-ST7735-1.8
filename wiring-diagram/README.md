@@ -59,8 +59,8 @@
 
 | GPS Pin | ESP32-S3 |
 |---------|---------------|
-| TX → ESP32 RX | GPIO 38 |
-| RX → ESP32 TX | GPIO 17 |
+| GPS TX → ESP32 RX | GPIO 38 |
+| GPS RX → ESP32 TX | GPIO 17 |
 
 ### Battery Monitoring
 
