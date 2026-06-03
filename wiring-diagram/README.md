@@ -105,4 +105,4 @@ operating voltage, and specifications of each module, as different versions may 
 
 * The NRF24L01 adapter includes a voltage regulator and filtering capacitors that provide a stable 3.3V supply, improving reliability, communication range, and overall performance. 
 
-*Using the adapter is highly recommended to prevent connection issues, random resets, and packet loss.
+* Using the adapter is highly recommended to prevent connection issues, random resets, and packet loss.
