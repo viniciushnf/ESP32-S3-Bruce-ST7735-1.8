@@ -163,5 +163,5 @@ I'm always happy to help, receive feedback, and see what the community creates.
 
 I'm also open to collaborations and partnership opportunities related to electronics, embedded systems, and open-source projects.
 
-* Instagram: @viniciushnf
+* Instagram: **@viniciushnf**
 * https://www.instagram.com/viniciushnf/
