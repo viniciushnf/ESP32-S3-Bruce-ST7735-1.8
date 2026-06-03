@@ -72,6 +72,14 @@
 ---
 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/wiring-diagram/wiring-diagram.png" alt="ESP32-S3 pinout" width="100%">
+</p>
+
+
+---
+
+
 ## :warning: Attention:
 
 * I recommend testing all components on a breadboard before assembling the final device. Be sure to verify the pinout,
