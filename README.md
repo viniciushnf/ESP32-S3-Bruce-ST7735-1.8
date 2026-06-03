@@ -25,6 +25,51 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
+## :zap: Features
+
+### Wi-Fi
+- Wi-Fi scanning and network analysis
+- Wi-Fi penetration testing tools available in Bruce Firmware
+- Packet monitoring and wireless network reconnaissance
+- Wi-Fi attacks
+
+### Bluetooth
+- Bluetooth device scanning
+- Bluetooth Low Energy (BLE) tools
+- Bluetooth testing and analysis features
+
+### RF (NRF24L01)
+- NR Jammer
+- RF Spectrum
+- MouseJack-related features supported by Bruce Firmware
+
+### GPS
+- Real-time GPS positioning
+- Display latitude, longitude, altitude, speed, and satellite information
+- Save GPS data to the SD card
+
+### NFC (PN532)
+- Read NFC tags
+- Write data to NFC tags
+- NFC tag information analysis
+
+### Infrared (IR)
+- Receive infrared signals
+- Transmit infrared signals
+- Store and replay captured IR codes
+
+### SD Card
+- Browse files and folders
+- Store captured data and logs
+- Load and save configuration files
+
+### Power Management
+- Battery voltage monitoring
+- Rechargeable 18650 battery support
+- Integrated charging and voltage regulation
+
+---
+
 ## :rocket: Hardware Used
 
 * ESP32-S3
