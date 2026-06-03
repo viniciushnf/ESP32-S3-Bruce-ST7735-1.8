@@ -1,10 +1,14 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/images/banner-github.png" alt="ESP32-S3 Bruce Firmware Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/images/banner-github.png" alt="ESP32-S3 Banner" width="100%">
 </p>
 
 # ESP32-S3 + Bruce Firmware | 1.8" ST7735 Display, GPS, NFC, NRF24L01, IR & Joystick
 
 This project combines multiple modules into a single portable Bruce Firmware device, including a TFT display, GPS navigation, NFC communication, NRF24L01 RF communication, infrared functionality, joystick control, SD card storage, and battery monitoring.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/images/photo-github.webp" alt="ESP32-S3 photo" width="100%">
+</p>
 
 ---
 
