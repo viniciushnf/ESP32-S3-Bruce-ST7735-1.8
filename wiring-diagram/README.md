@@ -106,3 +106,13 @@ operating voltage, and specifications of each module, as different versions may 
 * The NRF24L01 adapter includes a voltage regulator and filtering capacitors that provide a stable 3.3V supply, improving reliability, communication range, and overall performance. 
 
 * Using the adapter is highly recommended to prevent connection issues, random resets, and packet loss.
+
+---
+
+## :bulb: Infrared Transmitter Circuit
+
+* The 2N2222 transistor is used to drive the infrared transmitting LED. 
+
+* An ESP32-S3 GPIO cannot safely provide the current required for a powerful IR transmission, so the transistor acts as a switch that allows the LED to draw more current directly from the power supply. 
+
+* This increases the infrared signal strength, improves transmission range, and helps protect the ESP32-S3 GPIO from excessive current.
