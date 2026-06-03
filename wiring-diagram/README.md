@@ -4,7 +4,7 @@
 
 ### Display
 
-| Display Pin | ESP32-S3 GPIO |
+| Display Pin | ESP32-S3 |
 |------------|---------------|
 | LED BL | GPIO 4 |
 | SCK (SCLK) | GPIO 5 |
@@ -15,7 +15,7 @@
 
 ### SD Card
 
-| SD Card Pin | ESP32-S3 GPIO |
+| SD Card Pin | ESP32-S3 |
 |------------|---------------|
 | CS | GPIO 40 |
 | MOSI | GPIO 6 |
@@ -24,7 +24,7 @@
 
 ### NRF24L01
 
-| NRF24L01 Pin | ESP32-S3 GPIO |
+| NRF24L01 Pin | ESP32-S3 |
 |-------------|---------------|
 | CE | GPIO 21 |
 | CSN / SS | GPIO 47 |
@@ -35,7 +35,7 @@
 
 ### Joystick
 
-| Joystick Pin | ESP32-S3 GPIO |
+| Joystick Pin | ESP32-S3 |
 |-------------|---------------|
 | VR-X | GPIO 12 |
 | VR-Y | GPIO 13 |
@@ -43,28 +43,28 @@
 
 ### I2C
 
-| Signal | ESP32-S3 GPIO |
+| I2C | ESP32-S3 |
 |---------|---------------|
 | SDA | GPIO 18 |
 | SCL | GPIO 8 |
 
 ### Infrared
 
-| Signal | ESP32-S3 GPIO |
+| IR | ESP32-S3 |
 |---------|---------------|
 | TX | GPIO 1 |
 | RX | GPIO 2 |
 
 ### GPS
 
-| GPS Pin | ESP32-S3 GPIO |
+| GPS Pin | ESP32-S3 |
 |---------|---------------|
 | TX → ESP32 RX | GPIO 38 |
 | RX → ESP32 TX | GPIO 17 |
 
 ### Battery Monitoring
 
-| Signal | ESP32-S3 GPIO |
+| Signal | ESP32-S3 |
 |---------|---------------|
 | BAT | GPIO 10 |
 
