@@ -43,14 +43,14 @@
 
 ### I2C
 
-| I2C | ESP32-S3 |
+| I2C Pin | ESP32-S3 |
 |---------|---------------|
 | SDA | GPIO 18 |
 | SCL | GPIO 8 |
 
 ### Infrared
 
-| IR | ESP32-S3 |
+| IR Pin | ESP32-S3 |
 |---------|---------------|
 | TX | GPIO 1 |
 | RX | GPIO 2 |
