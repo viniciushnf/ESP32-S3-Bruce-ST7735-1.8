@@ -76,9 +76,7 @@
   <img src="https://raw.githubusercontent.com/viniciushnf/ESP32-S3-Bruce-ST7735-1.8/refs/heads/main/wiring-diagram/wiring-diagram.png" alt="ESP32-S3 pinout" width="100%">
 </p>
 
-
 ---
-
 
 ## :warning: Attention:
 
@@ -88,3 +86,23 @@ operating voltage, and specifications of each module, as different versions may 
 * Carefully check the power connections and ensure that all modules are compatible with your chosen power supply.
 
 * Testing everything beforehand can help identify wiring issues, compatibility problems, and configuration mistakes before the final assembly.
+
+---
+
+## :battery: Battery Charger and Monitoring Circuit
+
+* This project uses a J5019 module, which combines a TP4056 Li-ion battery charger and an MT3608 boost converter. The TP4056 safely charges the 18650 battery, while the MT3608 boosts the battery voltage to a stable 5V output for the ESP32-S3.
+
+* Battery voltage is monitored using a voltage divider made of two 100 kΩ resistors, reducing the battery voltage by half before it reaches the ESP32-S3 ADC pin. This is necessary because a Li-ion battery can reach 4.2V, which is too high for direct ADC measurement.
+
+* A 100 nF capacitor helps filter noise and improves battery voltage readings. Always verify your module specifications and test the circuit before final assembly.
+
+---
+
+## :information_source: NRF24L01 adapter
+
+* The NRF24L01 is sensitive to power supply fluctuations and can become unstable when powered directly from the ESP32-S3. 
+
+* The NRF24L01 adapter includes a voltage regulator and filtering capacitors that provide a stable 3.3V supply, improving reliability, communication range, and overall performance. 
+
+*Using the adapter is highly recommended to prevent connection issues, random resets, and packet loss.
