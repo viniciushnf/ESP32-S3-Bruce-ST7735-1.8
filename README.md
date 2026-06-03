@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Hardware Used
+## :microchip: Hardware Used
 
 * ESP32-S3
 * 1.8" ST7735 TFT Display with SD Card Reader
@@ -35,7 +35,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Other Components Used
+## :toolbox: Other Components Used
 
 * Wires
 * 2× Perfboards (26 × 31 holes / 70 × 90 mm)
@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Wiring Diagram and Documentation
+## :clipboard: Wiring Diagram and Documentation
 
 * The module pinout can be found in: wiring-diagram/pinout.txt
 * The wiring diagram can be found in: wiring-diagram/wiring-diagram.png
@@ -61,7 +61,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Bruce Firmware Modifications
+## :wrench: Bruce Firmware Modifications
 
 * Several Bruce Firmware files were modified to adapt the interface to the 1.8" ST7735 display.
 * Additional features and improvements were added to the firmware.
@@ -69,7 +69,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Battery Life
+## :battery: Battery Life
 
 * During testing, the device achieved more than **8 hours of continuous operation** using a **3000 mAh 18650 Li-ion battery**.
 * Actual battery life may vary depending on several factors, including battery capacity and quality, display brightness, active modules, enabled features, wireless activity, and overall device usage.
@@ -77,7 +77,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Important Notes
+## :information_source: Important Notes
 
 * All features were tested under controlled conditions. Performance may vary depending on hardware variations and configuration.
 * I recommend testing all components on a breadboard before assembling the final device. Be sure to verify the pinout, operating voltage, and specifications of each module, as different versions may have different requirements.
@@ -85,7 +85,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ---
 
-## Bruce Firmware
+## :shark: Bruce Firmware
 
 Official Bruce Firmware project:
 
@@ -94,7 +94,7 @@ Official Bruce Firmware project:
 
 ---
 
-## Disclaimer
+## :warning: Disclaimer
 
 * This project is intended for educational, research, and development purposes only.
 * The author assumes no responsibility for any damage to hardware, software, property, legal issues, or data resulting from the use or misuse of the information, files, or materials provided in this repository.
