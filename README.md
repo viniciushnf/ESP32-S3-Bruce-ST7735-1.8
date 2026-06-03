@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 * PN532 NFC Module
 * NRF24L01 with Adapter
 * Infrared Transmitter and Receiver
-* Joystick
+* Joystick Module
 * 18650 Li-ion Battery
 * J5019 (TP4056 + MT3608) Battery Charging and 5V Regulation Module
 
@@ -101,3 +101,18 @@ Official Bruce Firmware project:
 * Users are responsible for ensuring compliance with all applicable laws, regulations, and policies in their jurisdiction. This project should only be used in authorized environments and in a responsible and ethical manner.
 * No warranty is provided regarding the accuracy, completeness, reliability, or suitability of the hardware designs, firmware modifications, wiring diagrams, or documentation contained in this repository.
 * By using this project, you acknowledge that you do so at your own risk.
+
+---
+
+## :wave: Get in touch
+
+If you build this project, I'd love to see the result! 
+
+If you have any questions, suggestions, or run into any issues, feel free to contact me on Instagram. 
+
+I'm always happy to help, receive feedback, and see what the community creates. 
+
+I'm also open to collaborations and partnership opportunities related to electronics, embedded systems, and open-source projects.
+
+* Instagram: @viniciushnf
+* https://www.instagram.com/viniciushnf/
