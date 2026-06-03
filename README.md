@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 
 ### Wi-Fi
 - Wi-Fi scanning and network analysis
-- Wi-Fi penetration testing tools available in Bruce Firmware
+- Wi-Fi penetration testing tools 
 - Packet monitoring and wireless network reconnaissance
 - Wi-Fi attacks
 
@@ -39,9 +39,9 @@ https://www.youtube.com/watch?v=Ke6ndQEae68
 - Bluetooth testing and analysis features
 
 ### RF (NRF24L01)
-- NR Jammer
+- RF Jammer
 - RF Spectrum
-- MouseJack-related features supported by Bruce Firmware
+- MouseJack
 
 ### GPS
 - Real-time GPS positioning
